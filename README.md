@@ -1,2 +1,2 @@
 # LANSTELLA
-A marketplace for investors to purchase verifiable lands and properties
+A marketplace for investors to purchase verifiable lands, properties and real world assets onchain.
