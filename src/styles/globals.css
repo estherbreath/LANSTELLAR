@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body {
+    color: #fff;
+}
+.bg-main {
+    position: relative;
+    background: #230C33;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.16);
+}
+
+.bg-color {
+    background: #230C33;
+    color: #ffffff14;
+}
+.input-bg {
+    border-radius: 16px;
+    background: var(--60-opacity, #ffffff14);
+}
+.placeholder-grey::placeholder {
+color: rgba(255, 255, 255, 0.50);
+font-size: 18px;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.scrollbar-hide {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
