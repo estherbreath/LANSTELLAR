@@ -2,6 +2,7 @@
 import { useState } from 'react';
 import Navbar from '../_components/navbar/navbar';
 import { Buyer, Pizza } from '../assets/icons/icons';
+import DefaultButton from '../_components/buttons/defaultButton';
 
 const Roles = () => {
   const [isChecked, setIsChecked] = useState<number | null>(null);
@@ -48,6 +49,22 @@ const Roles = () => {
             </div>
             <span className='text-[24px] text-[#333] font-semibold max-w-48'>I am a buyer looking for land</span>
           </div>
+        </div>
+
+        <div className='w-2/12 ml-8 flex items-center justify-center mt-20'>
+          {isChecked !== null ? (
+            <DefaultButton
+              addClass='w-6/12'
+              className="default-btn"
+              to={isChecked === 1 ? "/creator-registration" : "/buyer-registration"}
+            >
+              Sign Up
+            </DefaultButton>
+          ) : (
+            <div className='w-full bg-[#FFD000] rounded-[16px] py-4 px-8 text-center text-black opacity-50 cursor-not-allowed'>
+              Sign Up
+            </div>
+          )}
         </div>
       </div>
     </div>
