@@ -4,7 +4,6 @@ import Polygon from "../../assets/icons/polygon.png";
 import Bsc from "../../assets/icons/bsc.png";
 import Eth from "../../assets/icons/eth.png";
 import { SelectDown } from '~/app/assets/icons/icons';
-import { time } from 'console';
 
 export const NETWORKS = [
     {
