@@ -3,29 +3,11 @@ import Image from 'next/image';
 import NftSm from "../../assets/images/bgsm.png";
 import BgNft from "../../assets/images/bgnft.png";
 import EthIcon from "../../assets/images/ethicon.png"
-import { LAND_IMG } from '~/app/_components/data/allLands';
+import { LAND_IMG, LAND_INFO } from '~/app/_components/data/allLands';
 import DashboardLayout from '~/app/_components/dashboard-items/dashboardLayout';
 import DefaultButton from '~/app/_components/buttons/defaultButton';
 
 
-export const LAND_INFO = [
-  {
-    title: "Price",
-    value: "3.8",
-  },
-  {
-    title: "Volume",
-    value: "80",
-  },
-  {
-    title: "Highest bid",
-    value: "3.8",
-  },
-  {
-    title: "Listed",
-    value: "6X",
-  },
-]
 
 const Portfolio = () => {
   return (
