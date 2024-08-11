@@ -50,33 +50,33 @@ const DashboardNav = () => {
 
       <BaseModal open={connect}
         setOpen={setConnect}
-        className="top-0 bottom-0 justify-center items-center mx-auto my-auto special-index  flex xl:w-[650px] w-full">
+        className="top-0 bottom-0 justify-center items-center mx-auto my-auto special-index  flex xl:w-[500px] w-full">
         <div className='flex flex-col gap-8 w-full justify-center'>
-          <div className='text-[40px]'>Connect to</div>
-          <div className='flex flex-col gap-10 w-full items-start px-20'>
+          <div className='text-[30px]'>Connect to</div>
+          <div className='flex flex-col gap-10 w-full items-start px-20 mt-2'>
               <div className='flex flex-row items-center px-4 gap-8'>
                   <span>
                     <Metamask />
                   </span>
-                  <span className='text-white text-[28px] font-light'>Metamask</span>
+                  <span className='text-white text-[20px] font-light'>Metamask</span>
               </div>
               <div className='flex flex-row items-center px-4 gap-8'>
                   <span>
                     <Coinbase />
                   </span>
-                  <span className='text-white text-[28px] font-light'>Coinbase</span>
+                  <span className='text-white text-[20px] font-light'>Coinbase</span>
               </div>
               <div className='flex flex-row items-center px-4 gap-8'>
                   <span>
                     <Phantom />
                   </span>
-                  <span className='text-white text-[28px] font-light'>Phantom</span>
+                  <span className='text-white text-[20px] font-light'>Phantom</span>
               </div>
               <div className='flex flex-row items-center px-4 gap-8'>
                   <span>
                     <WalletConnect />
                   </span>
-                  <span className='text-white text-[28px] font-light'>Wallet Connect</span>
+                  <span className='text-white text-[20px] font-light'>Wallet Connect</span>
               </div>
           </div>
         </div>

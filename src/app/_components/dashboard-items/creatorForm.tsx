@@ -206,40 +206,42 @@ const CreatorForm = () => {
 
                 </div>
                 <div className='flex flex-col gap-4 w-3/12 fixed right-8'>
-            <span className='text-[20px] text-white mt-14'>Upload your avatar</span>
-            <div className='w-[422px] h-[308px] bg-[#2F1145] rounded-[16px] items-center flex justify-center'>
-                <label className="cursor-pointer w-full h-full flex items-center justify-center">
-                    {preview ? (
-                        <Image
-                            src={preview}
-                            alt="Avatar Preview"
-                            className="w-full h-full object-cover rounded-[16px]"
-                        />
-                    ) : (
-                        <Upload />
-                    )}
-                    <input type="file" accept="image/*" className="hidden" onChange={handleFileUpload} />
-                </label>
-            </div>
-            <div className='w-11/12 flex justify-center items-center ml-2 mt-4'>
-                <DefaultButton
-                    addClass='w-6/12'
-                    className="default-btn"
-                    to=""
-                >
-                    Upload
-                </DefaultButton>
-            </div>
-        </div>
+                    <span className='text-[20px] text-white mt-14'>Upload your avatar</span>
+                    <div className='w-[422px] h-[308px] bg-[#2F1145] rounded-[16px] items-center flex justify-center'>
+                        <label className="cursor-pointer w-full h-full flex items-center justify-center">
+                            {preview ? (
+                                <Image
+                                    src={preview}
+                                    alt="Avatar Preview"
+                                    width={300}  
+                                    height={300} 
+                                    className="w-full h-full object-cover rounded-[16px]"
+                                />
+                            ) : (
+                                <Upload />
+                            )}
+                            <input type="file" accept="image/*" className="hidden" onChange={handleFileUpload} />
+                        </label>
+                    </div>
+                    <div className='w-11/12 flex justify-center items-center ml-2 mt-4'>
+                        <DefaultButton
+                            addClass='w-6/12'
+                            className="default-btn"
+                            to=""
+                        >
+                            Upload
+                        </DefaultButton>
+                    </div>
+                </div>
 
 
 
             </div>
 
             <div className='w-3/12 flex items-center justify-center mx-auto py-20'>
-                        <div className='flex px-8 w-full items-center justify-center py-3 bg-[#FFD000] rounded-[16px] text-black font-bold text-[20px] cursor-pointer' onClick={() => setAccountCreated(true)}>
-                                Create Account
-                        </div>
+                <div className='flex px-8 w-full items-center justify-center py-3 bg-[#FFD000] rounded-[16px] text-black font-bold text-[20px] cursor-pointer' onClick={() => setAccountCreated(true)}>
+                    Create Account
+                </div>
                 {/* <DefaultButton
                     addClass='w-6/12'
                     className="default-btn"
