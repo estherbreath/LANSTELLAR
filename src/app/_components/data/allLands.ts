@@ -270,3 +270,23 @@ export const LAND_IMG = [
     },
 ]
 
+
+export const LAND_INFO = [
+    {
+      title: "Price",
+      value: "3.8",
+    },
+    {
+      title: "Volume",
+      value: "80",
+    },
+    {
+      title: "Highest bid",
+      value: "3.8",
+    },
+    {
+      title: "Listed",
+      value: "6X",
+    },
+  ]
+
