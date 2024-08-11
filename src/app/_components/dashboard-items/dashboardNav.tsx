@@ -1,5 +1,6 @@
 "use client";
 import React, { useState } from 'react'
+import { useRouter } from "next/navigation";
 import Image from 'next/image'
 import Pfp from '../../assets/images/ronaldo.png'
 import BaseModal from '../modals/basemodal';
@@ -7,12 +8,13 @@ import BaseModal from '../modals/basemodal';
 import { ConnectIcon, Metamask, Coinbase, WalletConnect, Phantom, NotificationIcon, SearchEllipse } from '~/app/assets/icons/icons'
 
 const DashboardNav = () => {
+  const router = useRouter();
   const [connect, setConnect] = useState(false);
 
   return (
     <div className='w-full flex flex-row justify-between px-14 py-1 relative items-center'>
-      <div>
-        <span className='text-[24px] text-white'>LANSTELLAR</span>
+      <div onClick={() => router.push(`/`)}>
+        <span className='text-[24px] text-white cursor-pointer' >LANSTELLAR</span>
       </div>
       <div className='flex'>
         <div className=' flex flex-row py-2 px-3 input-bg items-center w-[600px]'>
@@ -27,7 +29,7 @@ const DashboardNav = () => {
         </div>
       </div>
       <div className='flex flex-row gap-8 items-center'>
-        <div className='flex w-[180px] bg-[#FFD000] rounded-[16px] py-2 items-center justify-center text-[24px] text-[#1E1E1E]'>
+        <div className='flex w-[180px] bg-[#FFD000] rounded-[16px] py-2 items-center justify-center text-[16px] text-[#1E1E1E]'>
           + Create
         </div>
 
@@ -35,9 +37,9 @@ const DashboardNav = () => {
           <NotificationIcon />
         </span>
 
-        <div className='flex w-[180px] bg-[#93b7be52] rounded-[16px] py-2 px-4 items-center justify-start gap-4 text-[24px] text-[#1E1E1E] cursor-pointer' onClick={() => setConnect(true)}>
+        <div className='flex w-[180px] bg-[#93b7be52] rounded-[16px] py-2 px-4 items-center justify-start gap-4 text-[16px] text-[#1E1E1E] cursor-pointer' onClick={() => setConnect(true)}>
           <ConnectIcon />
-          <span className='text-white text-[24px]'>Connect</span>
+          <span className='text-white text-[16px]'>Connect</span>
         </div>
 
         <div>

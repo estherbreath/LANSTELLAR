@@ -36,7 +36,7 @@ const DashboardLeft = ({ current }: sidebarProps) => {
                 >
                   {page.icon}
                 </div>
-                  <span className='text-[16px] text-white'>{page.name}</span>
+                  <span className='text-[12px] text-white'>{page.name}</span>
               </div>
             ))
           }

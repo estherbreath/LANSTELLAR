@@ -8,7 +8,7 @@ interface dashboardLayout {
 }
 const DashboardLayout = ({children, current}: dashboardLayout) => {
   return (
-    <div className='w-full h-screen  flex flex-col'>
+    <div className='w-full h-screen relative flex flex-col'>
         <div className='bg-main py-4 relative z-10'>
              <DashboardNav />
         </div>

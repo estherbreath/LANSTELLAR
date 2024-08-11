@@ -3,17 +3,21 @@ import React from 'react'
 import DashboardLayout from '../_components/dashboard-items/dashboardLayout'
 import Estates from '../_components/estates/estates'
 import TopCollections from '../_components/collections/topCollections';
+import TrendingNow from '../_components/trending/trending';
 
 const Creator = () => {
   return (
    <DashboardLayout current={1}>
-        <div className='relative flex w-full flex-col'>
-            <span className='text-white text-[40px]'>Welcome to Lanstellar</span>
-            <div className=''>
+        <div className='w-full  relative flex flex-col overflow-y-scroll'>
+            <span className='text-white text-[35px] font-bold'>Welcome to Lanstellar</span>
+            <div className=' '>
                   <Estates />
             </div>
-            <div>
+            <div >
               <TopCollections />
+            </div>
+            <div className='mt-10'>
+                <TrendingNow />
             </div>
 
         </div>

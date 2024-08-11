@@ -1,9 +1,12 @@
-import React from 'react'
-import Navbar from '../_components/navbar/navbar'
-import CreatorLeft from '../_components/dashboard-items/creatorLeft'
-import CreatorForm from '../_components/dashboard-items/creatorForm'
+'use client';
+import React from 'react';
+import Navbar from '../_components/navbar/navbar';
+import CreatorLeft from '../_components/dashboard-items/creatorLeft';
+import CreatorForm from '../_components/dashboard-items/creatorForm';
+
 
 const CreatorRegistration = () => {
+ 
   return (
     <div className='w-full h-screen relative flex flex-col'>
        <div className='z-10 relative'>
@@ -18,6 +21,10 @@ const CreatorRegistration = () => {
                 <CreatorForm />
             </div>
         </div>
+
+
+
+       
     </div>
   )
 }
