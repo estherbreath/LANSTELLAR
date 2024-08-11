@@ -5,7 +5,6 @@ import Bsc from "../../assets/icons/bsc.png";
 import Eth from "../../assets/icons/eth.png";
 import { SelectDown } from '~/app/assets/icons/icons';
 
-
 export const NETWORKS = [
     {
         img: Polygon,
